@@ -4,3 +4,4 @@ data/netflix price data
 sample-recommendation-mod-collaborative-filtering.ipynb
 data/processed/data1.csv
 models/svd.pkl
+recommender

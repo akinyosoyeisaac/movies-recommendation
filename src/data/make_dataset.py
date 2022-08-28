@@ -1,30 +1,19 @@
-# -*- coding: utf-8 -*-
-import click
-import logging
-from pathlib import Path
-from dotenv import find_dotenv, load_dotenv
+import pandas as pd
+import numpy as np
 
-
-@click.command()
-@click.argument('input_filepath', type=click.Path(exists=True))
-@click.argument('output_filepath', type=click.Path())
-def main(input_filepath, output_filepath):
-    """ Runs data processing scripts to turn raw data from (../raw) into
-        cleaned data ready to be analyzed (saved in ../processed).
-    """
-    logger = logging.getLogger(__name__)
-    logger.info('making final data set from raw data')
-
-
-if __name__ == '__main__':
-    log_fmt = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-    logging.basicConfig(level=logging.INFO, format=log_fmt)
-
-    # not used in this stub but often useful for finding various files
-    project_dir = Path(__file__).resolve().parents[2]
-
-    # find .env automagically by walking up directories until it's found, then
-    # load up the .env entries as environment variables
-    load_dotenv(find_dotenv())
-
-    main()
+def parse(file):
+    data = open(r"data\processed\data1.csv", mode="w")
+    with open(file) as f:
+        lines = f.readlines()
+        for k in range(len(lines)):
+            line = lines[k]
+            line = line.strip()
+            if line.endswith(":"):
+                movie_id = line.replace(":", "")
+            else:
+                row = [x for x in line.split(",")]
+                row.insert(0, movie_id)
+                data.write(",".join(row))
+                data.write("\n")
+file_path = r"data\netflix price data\combined_data_1.txt"
+parse(file_path)
