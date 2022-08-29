@@ -1,0 +1,11 @@
+# data path
+paths:
+  raw_data: "data/raw/combined_data_1.txt"
+  movie_title: "data/raw/movie_titles.csv"
+  interim_cleaning: "data/interim/data1.csv"
+  clean_data: "data/processed/data_clean.csv"
+  clean_data_t: "data/processed/data_clean_transpose.csv"
+  movie_summary: "data/processed/df_movie_summary.csv"
+  cust_summary: "data/processed/df_cust_summary.csv"
+
+model: "models/svd.pkl"

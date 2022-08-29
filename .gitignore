@@ -1,7 +1,12 @@
 hybrid-and-tensorflow-recommender-system.ipynb
-data/netflix price data.zip
-data/netflix price data
 sample-recommendation-mod-collaborative-filtering.ipynb
-data/processed/data1.csv
+data/netflix price data
+data/interim/data1.csv
+data/processed/data_clean_transpose.csv
+data/processed/data_clean.csv
+data/processed/df_cust_summary.csv
+data/processed/df_movie_summary.csv
+data/raw/combined_data_1.txt
+data/raw/movie_titles.csv
 models/svd.pkl
 recommender
