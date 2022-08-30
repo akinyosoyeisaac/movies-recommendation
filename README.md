@@ -1,8 +1,8 @@
 # movies-recommendation
 # Content-Based-Movie-Recommender-System
-It is a common thing in this new era where technology is fast evolving and humanity is constantly been faced with various challenges the requires devolting a lot time. He then need to leave some task to the process of automation and one of such task is a recommendation system. No one wants to waste time surfling a amazon or boomplayer in service for a product or musics of interest. Such task can be left to one of the sub of AI which is recommendation system.
-This project uses a user-item collaboratory algorithm, and a pearson correlation algorithm to build a movies recommendation systems using the a dataset gotten from kaggle links can be gotten from below.  
-A recommendation system is used to automate the process of recommending things to a user based on his\her past interest or likes. for example, Youtube and NetFlix uses a recommendation system to automatically suggest movies and videos to users based on their past prefernces. There are different types of recommendation system such as Popularity based,Content based, Collaboratory filtering and Hybrid.
+It is a common thing in this new era where technology is fast evolving and humanity is constantly been faced with various challenges the requires devoting a lot time. He then need to leave some task to the process of automation and one of such task is a recommendation system. No one wants to waste time surfing a amazon or boom-player in service for a product or musics of interest. Such task can be left to one of the sub of AI which is recommendation system.
+This project uses a user-item collaborative algorithm, and a Pearson correlation algorithm to build a movies recommendation systems using the a datasets gotten from Kaggle links can be gotten from below.  
+A recommendation system is used to automate the process of recommending things to a user based on his\her past interest or likes. for example, YouTube and NetFlix uses a recommendation system to automatically suggest movies and videos to users based on their past preference. There are different types of recommendation system such as Popularity based,Content based, Collaborative filtering and Hybrid.
 
 
 
@@ -20,7 +20,7 @@ ___In this project the following python libraries were used___
 
 ## Setup to Run
 
-> In this project two models were built the first using the collaboratory filtering algorithm(Probabilistic Matrix Factorization for the surprise library) and the other was the pearson correlation using the pandas library
+> In this project two models were built the first using the collaborative filtering algorithm(Probabilistic Matrix Factorization for the surprise library) and the other was the Pearson correlation using the pandas library
 >
 > All codes included in both the notebooks and the scripts are configured to run from the root directory 
 >
@@ -34,16 +34,16 @@ pip install -r requirements.txt
 >
 > The two files should be in the **./data/raw** <a href="data/raw">Directory</a>
 >
-> For more on data visit the <a href="#Dataset used">Dataset used</a>
+> For more on data visit the <a href="#Dataset used">Datasets used</a>
 
 ## Model performance
 > The Model was cross validated on a five fold split and below is the performance
 <img src="reports\figures\svd_model_performance.JPG" width="350">
 
-## Dataset used
+## Datasets used
 
-* The dataset used for this project can be gotten [here](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)
-* The kaggle data consist of five dataset the first four includes combined_data_[1-4].txt and the movies_titles.csv which are very large files hence, they are not included in this git repository to work along side this project you should download the file from the kaggle link above
+* The datasets used for this project can be gotten [here](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)
+* The Kaggle data consist of five datasets the first four includes combined_data_[1-4].txt and the movies_titles.csv which are very large files hence, they are not included in this git repository to work along side this project you should download the file from the Kaggle link above
 
 ## Deployment
 1. The model was wrapped around an API using FastAPI though the model has not be deployment for the same reason the training files were not included in this repository
