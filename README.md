@@ -8,6 +8,8 @@ A recommendation system is used to automate the process of recommending things t
 
 # TOOLS
 ___In this project the following python libraries were used___
+
+
 [![pandas](https://img.shields.io/badge/Pandas-green.svg?style=flat&logo=pandas&logoColor=white)](http://pandas.pydata.org/doc/)
 [![Numpy](https://img.shields.io/badge/Numpy-red.svg?style=flat&logo=numpy&logoColor=white)](http://numpy.org/doc/stable/)
 [![Sklearn](https://img.shields.io/badge/Sklearn-green.svg?style=flat&logo=scikit-learn&logoColor=white)](http://scikit-learn.org/stable/modules/classes.html)
