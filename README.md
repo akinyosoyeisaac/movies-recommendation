@@ -48,8 +48,8 @@ pip install -r requirements.txt
 ## Deployment
 1. The model was wrapped around an API using FastAPI though the model has not be deployment for the same reason the training files were not included in this repository
 2. In future we hope to explore other solution of overcoming this limitation such as using Azure, Google Service and DVC to manage this kind of project
-
-
+## Others
+1. [Medium post](https://medium.com/@tonmeje/490645fdb143)
 Project Organization
 ------------
 
