@@ -46,7 +46,7 @@ def recommender(title, min_count=0):
         # concatenating the corr_target, movie_title and df_movie_summary
         corr_target = corr_target.join(movies_title.set_index("Movie_Id")).join(df_movie_summary)[['PearsonR', 'Name', 'count', 'mean']]
         # returning the first ten related movies with a particular number of movie count
-        return corr_target[corr_target['count']>min_count][:10].reset_index()["Name"].to_dict()
+        return corr_target[corr_target['count']>min_count][1:6].reset_index()["Name"].to_dict()
     else:
         # if movies does not exist in the database the response that will be given
         return "Please check the title you have provided to see if it is correct or the title does not exist in our database"
