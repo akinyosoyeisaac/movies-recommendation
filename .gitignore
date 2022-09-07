@@ -10,3 +10,4 @@ data/raw/combined_data_1.txt
 data/raw/movie_titles.csv
 models/svd.pkl
 recommender
+data/tmdb*.csv

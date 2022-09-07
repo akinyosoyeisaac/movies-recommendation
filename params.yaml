@@ -7,5 +7,6 @@ paths:
   clean_data_t: "data/processed/data_clean_transpose.csv"
   movie_summary: "data/processed/df_movie_summary.csv"
   cust_summary: "data/processed/df_cust_summary.csv"
+  tmdb_movies: "data/tmdb_5000_credits.csv"
 
 model: "models/svd.pkl"
